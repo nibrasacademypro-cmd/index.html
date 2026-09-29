@@ -1,7 +1,135 @@
-echo "# index.html" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/nibrasacademypro-cmd/index.html.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Les aliments et l'équilibre alimentaire - 3AC</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef7f4, #e8f1fa);
+    color: #17324d;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    background: white;
+    border-radius: 20px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #168a75;
+}
+
+.header h1 {
+    margin: 10px 0;
+    font-size: 26px;
+}
+
+.header p {
+    margin: 5px;
+    color: #607080;
+}
+
+.timer {
+    background: #17324d;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.question {
+    background: white;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.question h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.option {
+    display: block;
+    background: #f4f8fa;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option:hover {
+    background: #e5f3ef;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+.correct {
+    background: #d8f5e8 !important;
+    border: 2px solid #28a86b;
+}
+
+.incorrect {
+    background: #fde1e1 !important;
+    border: 2px solid #e05252;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.buttons {
+    text-align: center;
+    margin: 25px 0;
+}
+
+button {
+    border: none;
+    padding: 14px 25px;
+    margin: 7px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#finish {
+    background: #168a75;
+    color: white;
+}
+
+#restart {
+    background: #17324d;
+    color: white;
+}
+
+#copy {
+    background: #f1a83b;
+    color
